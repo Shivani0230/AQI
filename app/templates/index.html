@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AirSight+ (Python)</title>
+  <link rel="stylesheet" href="/static/css/style.css"/>
+  <meta name="color-scheme" content="dark"/>
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+</head>
+<body class="good">
+  <!-- Hero with stock image -->
+  <section class="hero" role="banner">
+    <div class="overlay">
+      <center>
+        <h1 id="heroTitle">Know Your Air</h1>
+        <p id="heroSub">Stay ahead of pollution, breathe safer every day</p>
+        <div class="searchbar">
+          <input id="city" placeholder="Search for any Indian city (e.g. Delhi, Jaipur, Mumbai)" aria-label="City name"/>
+          <button id="btnSearch">Search</button>
+        </div>
+      </center>
+    </div>
+  </section>
+
+  <!-- Main cards -->
+  <div class="container">
+    <main class="grid">
+      <section id="snapshot" class="card skeleton" aria-busy="true"></section>
+      <section id="insights" class="card skeleton" aria-busy="true"></section>
+      <section id="forecast" class="card skeleton" aria-busy="true"></section>
+      <!-- Map card -->
+      <section class="card skeleton" aria-busy="true">
+        <div id="map"></div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Leaflet JS -->
+   
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <!-- Leaflet heatmap plugin (optional, if you want AQI heatmap) -->
+  <script src="https://unpkg.com/leaflet.heat/dist/leaflet-heat.js"></script>
+
+  <script src="/static/js/main.js" defer></script>
+</body>
+</html>
