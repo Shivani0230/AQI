@@ -1,5 +1,5 @@
 
-# AirSight+ (Python) – Starter
+# AirSight+ (Python) 
 
 Python-first implementation using **FastAPI** with:
 - LRU cache (TTL)
